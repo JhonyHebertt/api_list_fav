@@ -1,0 +1,29 @@
+# Ignore o ambiente virtual
+env/
+*.pyc
+__pycache__/
+
+# Ignore arquivos de configuração sensíveis
+.env
+*.env
+
+# Ignore dados temporários
+*.sqlite3
+*.db
+instance/
+
+# Ignore logs
+*.log
+
+# Ignore migrations geradas pelo Flask-Migrate
+migrations/
+
+# Ignore arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignore arquivos específicos do editor de código
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,19 @@
+{
+  "name": "Maria de Oliveira",
+  "email": "maria.oliveira@example.com",
+  "password": "minhaSenhaSegura"
+}
+
+
+{
+  "name": "JOAO SILVA",
+  "email": "joao.silva@example.com",
+  "password": "senha123"
+}
+
+
+{
+  "name": "Jhony",
+  "email": "jhony123@hotmail.com",
+  "password": "321jhony"
+}
