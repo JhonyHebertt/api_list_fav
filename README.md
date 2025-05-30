@@ -1,4 +1,4 @@
-# API de Favoritos
+# API de Produtos Favoritos
 
 API RESTful para gerenciamento de clientes, produtos e favoritos, desenvolvida com Flask, Flask-RESTX, SQLAlchemy e JWT.
 
@@ -10,8 +10,8 @@ API RESTful para gerenciamento de clientes, produtos e favoritos, desenvolvida c
 ## Instalação
 
 ```bash
-git clone https://github.com/seuusuario/list_fav.git
-cd list_fav
+git clone https://github.com/seuusuario/api_list_fav.git
+cd api_list_fav
 python -m venv env
 env\Scripts\activate  # Windows
 # source env/bin/activate  # Linux/Mac
