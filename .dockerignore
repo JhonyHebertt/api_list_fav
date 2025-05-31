@@ -1,0 +1,32 @@
+# Ambiente virtual
+env/
+venv/
+ENV/
+VENV/
+
+# Arquivos do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Arquivos do Git
+.git/
+.gitignore
+
+# Arquivos Docker (não precisam estar na imagem em si)
+Dockerfile
+.dockerignore
+docker-compose.yml # A menos que você tenha um motivo específico para incluí-lo
+
+# Arquivos de configuração local e segredos
+.env
+*.sqlite3 # Se você estiver usando sqlite para desenvolvimento local
+*.db
+
+# Logs e outros
+*.log
+.DS_Store

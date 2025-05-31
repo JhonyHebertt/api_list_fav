@@ -5,6 +5,7 @@ from routes.clientes import cl as clients_cl
 from routes.favoritos import fv as favorites_fv
 from routes.produtos import pd as products_pd
 from routes.auth import ns as auth_ns
+import os
 
 def create_app():
     app = Flask(__name__)
@@ -40,6 +41,9 @@ def create_app():
 app = create_app()
 
 if __name__ == "__main__":
+    
     with app.app_context():
         db.create_all()
-    app.run(debug=True)
+    
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)

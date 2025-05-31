@@ -27,21 +27,29 @@ DATABASE_URL=postgresql://postgres:suasenha@localhost:5432/postgres
 JWT_SECRET_KEY=sua-chave-secreta
 ```
 
-## Migrações
+## Subindo com Docker
+
+Para construir e iniciar os containers (API + banco de dados):
 
 ```bash
-flask db init
-flask db migrate
-flask db upgrade
+docker-compose up --build
 ```
 
-## Execução
+Acesse a documentação interativa em: [http://localhost:5000/docs](http://localhost:5000/docs)
+
+## Migrações
+
+Dentro do container da API, rode:
+
+```bash
+docker-compose exec api_list_fav_app flask db upgrade
+```
+
+## Execução local (sem Docker)
 
 ```bash
 python main.py
 ```
-
-Acesse a documentação interativa em: [http://localhost:5000/docs](http://localhost:5000/docs)
 
 ## Endpoints
 

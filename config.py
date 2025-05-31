@@ -3,14 +3,11 @@ load_dotenv()
 import os
 from datetime import timedelta
 
+
 class Config:
     SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_ENGINE_OPTIONS = {
-        "connect_args": {
-            "options": "-csearch_path=aiqfome"
-        }
-    }
+    
     JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY')
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(minutes=60)
     JWT_TOKEN_LOCATION = ["headers"]
